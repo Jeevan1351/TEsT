@@ -18,7 +18,9 @@
     crossorigin="anonymous"
   ></script>
 
-  <script src="./index.js"></script>
+  <script src="./index.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
 
   <head>
     <meta charset="UTF-8" />
@@ -44,14 +46,25 @@
     <div id="AlgoControl">
       <div class="btn-group">
         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-          Dropdown <span class="caret"></span>
+          Select Algorithm <span class="caret"></span>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="#">Choice1</a></li>
-          <li><a href="#">Choice2</a></li>
-          <li><a href="#">Choice3</a></li>
-          <li><a href="#">Choice..</a></li>
+          <li><a href="#">Linear Search</a></li>
+          <li><a href="#">Binary Search</a></li>
+          <li><a href="#">Exponential Search</a></li>
+          <li><a href="#">Jump Search</a></li>
         </ul>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slider"
+            id="myRange"
+          />
+          <p>Value: <span id="demo"></span></p>
+        </div>
       </div>
     </div>
   </body>
