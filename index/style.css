@@ -1,8 +1,17 @@
+#AlgoControl {
+  height: 10%;
+  display: flex;
+}
+
+.dropdown-toggle {
+  height: 10%;
+  padding-top: 10%;
+}
 /*CSS for Slider! 
 */
 
 .slidecontainer {
-  width: 100%;
+  width: 20%;
   padding-left: 5%;
 }
 
