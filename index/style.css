@@ -1,16 +1,47 @@
 #AlgoControl {
+  padding-top: 1%;
   height: 10%;
   display: flex;
 }
 
-.dropdown-toggle {
+.btn-group {
+  padding: 0.8% 0 0 1%;
   height: 10%;
-  padding-top: 10%;
+  min-width: 15%;
+  text-align: center;
+}
+
+.dropdown-menu {
+  min-width: 95%;
+}
+.lit {
+  padding-left: 15%;
+}
+
+.btn-outline-secondary {
+  margin: 1%;
+}
+
+#controls {
+  display: flex;
+  width: auto;
+}
+
+#start {
+  padding: 0.3% 0 0% 5%;
+}
+
+#btn-controls {
+  width: 40%;
 }
 /*CSS for Slider! 
 */
 
 .slidecontainer {
+  width: 20%;
+}
+
+.slidecontainer-complex {
   width: 20%;
   padding-left: 5%;
 }
@@ -45,5 +76,5 @@
   background: #4caf50;
   cursor: pointer;
 }
-/*Enf of CSS for Slider! 
+/*End of CSS for Slider! 
 */

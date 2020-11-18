@@ -46,14 +46,54 @@
     <div id="AlgoControl">
       <div class="btn-group">
         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-          Select Algorithm <span class="caret"></span>
+          Select Algorithm <span class="carett"></span>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="#">Linear Search</a></li>
-          <li><a href="#">Binary Search</a></li>
-          <li><a href="#">Exponential Search</a></li>
-          <li><a href="#">Jump Search</a></li>
+          <li class="lit"><a href="#">Linear Search</a></li>
+          <li class="lit"><a href="#">Binary Search</a></li>
+          <li class="lit"><a href="#">Exponential Search</a></li>
+          <li class="lit"><a href="#">Jump Search</a></li>
         </ul>
+      </div>
+      <div class="slidecontainer-complex">
+        <input
+          type="range"
+          min="1"
+          max="10"
+          value="5"
+          step="1"
+          class="slider"
+          id="myRange"
+        />
+        <p>Complexity: <span id="demo"></span></p>
+      </div>
+      <div id="start">
+        <button type="button" class="btn btn-outline-secondary">START</button>
+      </div>
+    </div>
+    <div id="middle">
+      <canvas id="canvas" width="800" height="400"></canvas>
+    </div>
+    <div id="controls">
+      <div id="btn-controls">
+        <button type="button" class="btn btn-outline-secondary">
+          From the top
+        </button>
+        <button type="button" class="btn btn-outline-secondary">
+          Previous Step
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          onclick="pause_resume()"
+          id="pause"
+        >
+          Pause
+        </button>
+        <button type="button" class="btn btn-outline-secondary">
+          Next Step
+        </button>
+        <button type="button" class="btn btn-outline-secondary">Stop</button>
       </div>
       <div class="slidecontainer">
         <input
@@ -62,13 +102,10 @@
           max="100"
           value="50"
           class="slider"
-          id="myRange"
+          id="Speed"
         />
-        <p>Complexity: <span id="demo"></span></p>
+        <p>Animation Speed</p>
       </div>
-    </div>
-    <div id="middle">
-      <canvas id="canvas" width="1000" height="500"></canvas>
     </div>
   </body>
 </html>
